@@ -1,0 +1,11 @@
+<h1>give us your review!</h1>
+
+
+<div class = "container" >
+  <div class = "row">
+    <%= simple_form_for [@restautant, @review] do |f| %>
+    <%= f.input :content, placeholder: "placeholder" %>
+    <%= f.submit "submit button", class: "btn btn_primary" %>
+  <% end%>
+  </div>
+</div>
